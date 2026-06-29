@@ -34,17 +34,17 @@ const Navbar = (props) => {
             </div>
 
             <ul className="nav-right">
-                <li className="dropdown"><a href="./pages/curiosidades.html">Curiosidades</a>
+                <li className="dropdown"><a href="./pages/curiosidades.html">Nosotros</a>
                 </li>
 
-                <li class="dropdown"><a href="./pages/tips.html">Consejos</a>
+                <li class="dropdown"><a href="./pages/tips.html">Contacto</a>
                     <ul class="dropdown-menu">
                         <li><a href="./pages/alojamiento.html">Alojamiento</a></li>
                         <li><a href="./pages/comida.html">Comida</a></li>
 
                     </ul>
                 </li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/contacto.html">Carrito</a></li>
             </ul>
 
         </nav>
