@@ -1,48 +1,36 @@
 //import del css
 import "../assets/css/Navbar.css"
 //import el componente
-import CartWidget from "./CartWidget"
+/*import CartWidget from "./CartWidget"*/
 
 //IMPORTO LA IMG DE SRC
-import logo from "../assets/logo-shop.png"
+import logo from "../assets/imgs/logo.png"
 
 const Navbar = (props) => {
-//logica
+    
     return(
-        
-       /* <nav className='nav-container'>
-            <a href="" className="anchor-nav">
-                <img alt='logo' src={logo} className="logo"/>
-            </a>
-            <a href="" className="anchor-nav">Nuevos</a>
-            <a href="" className="anchor-nav">Ofertas</a>
-            <a href="" className="anchor-nav">Mas Vendidos</a>
-            <CartWidget compra={15} cart={props.cart}/>
-        </nav>*/
+
 
         <nav className="navbar">
             <ul className="nav-left">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/historia.html">Historia de Irlanda</a></li>
+                <li><a href="./pages/historia.html">Catalogo</a></li>
                 <li class="dropdown">
-                    <a href="./pages/lugares.html">Qué Visitar</a>
+                    <a href="./pages/lugares.html">Por Categoría</a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="./pages/lugares/cork.html">Cork</a></li>
-                        <li><a href="./pages/lugares/dingle.html">Dingle</a></li>
-                        <li><a href="./pages/lugares/donegal.html">Donegal</a></li>
-                        <li><a href="./pages/lugares/dublin.html">Dublín</a></li>
-                        <li><a href="./pages/lugares/galway.html">Galway</a></li>
-                        <li><a href="./pages/lugares/killarney.html">Killarney</a></li>
-                        <li><a href="./pages/lugares/kilkenny.html">Kilkenny</a></li>
-                        <li><a href="./pages/lugares/sligo.html">Sligo</a></li>
-                        <li><a href="./pages/lugares/westport.html">Westport</a></li>
+                        <li><a href="./pages/lugares/cork.html">Limpieza Facial</a></li>
+                        <li><a href="./pages/lugares/dingle.html">Serums</a></li>
+                        <li><a href="./pages/lugares/donegal.html">Cremas Faciales</a></li>
+                        <li><a href="./pages/lugares/dublin.html">Cremas Corporales</a></li>
+                        <li><a href="./pages/lugares/galway.html">Cuidado Capilar</a></li>
+                        <li><a href="./pages/lugares/killarney.html">Velas y Aromas</a></li>
                     </ul>
                 </li>
 
             </ul>
             <div className="logo1">
-                <a href="./index.html"><img src="./assets/Logo-1.png" alt="Logo"/></a>
+                <a href="./index.html"><img src="../assets/imgs/logo.png" alt="Logo"/></a>
             </div>
 
             <ul className="nav-right">
