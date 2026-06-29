@@ -6,6 +6,9 @@ import "../assets/css/Navbar.css"
 //IMPORTO LA IMG DE SRC
 import logo from "../assets/imgs/logo.png"
 
+import CartWidget from "./CartWidget"
+import Badge from 'react-bootstrap/Badge';
+
 const Navbar = (props) => {
 
     return(
@@ -44,7 +47,7 @@ const Navbar = (props) => {
 
                     </ul>
                 </li>
-                <li><a href="./pages/contacto.html">Carrito</a></li>
+                <li><CartWidget compra={15} cart={props.cart}/></li>
             </ul>
 
         </nav>
