@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
+
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #b3e6ae;
+    background-color: rgb(199, 167, 230);
     height: 100px;
 }
 
@@ -23,15 +26,15 @@
 }
 
 .nav-left a {
-    color: darkgreen;
-    font-family: "Geom", sans-serif;
+    color: white;
+    font-family: "Borel", cursive;
     font-weight: 500;
     font-size: 3vh;
     text-decoration: none;
 }
 
 .nav-left a:hover {
-    color: white;
+    color:   rgb(58, 17, 97);
 }
 
 .nav-right {
@@ -46,20 +49,19 @@
 }
 
 .nav-right a {
-    color: darkgreen;
-    font-family: "Geom", sans-serif;
+   color: white;
+    font-family: "Borel", cursive;
     font-weight: 500;
     font-size: 3vh;
-
     text-decoration: none;
 }
 
 .nav-right a:hover {
-    color: white;
+    color: rgb(58, 17, 97);
 }
 
-.logo1 img {
-    height: 200px;
+.logo img {
+    height: 100px;
 }
 
 /*DROPDOWN*/
@@ -80,9 +82,10 @@
 }
 
 .dropdown-menu li a {
+     font-family: "outfit", sans-serif;
     display: block;
     padding: 8px 20px;
-    color: darkgreen;
+    color: rgb(58, 17, 97);
     text-decoration: none;
     white-space: nowrap;
 }

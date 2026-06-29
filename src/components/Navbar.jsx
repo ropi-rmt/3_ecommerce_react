@@ -4,7 +4,7 @@ import "../assets/css/Navbar.css"
 /*import CartWidget from "./CartWidget"*/
 
 //IMPORTO LA IMG DE SRC
-import logo from "./imgs/logo.png"
+import logo from "../assets/imgs/logo.png"
 
 const Navbar = (props) => {
 
@@ -29,8 +29,8 @@ const Navbar = (props) => {
                 </li>
 
             </ul>
-            <div className="logo1">
-                <a href="./index.html"><img src="./imgs/logo.png" alt="Logo"/></a>
+            <div className="logo">
+                <a href="./index.html"><img src={logo} alt="Logo"/></a>
             </div>
 
             <ul className="nav-right">
