@@ -1,7 +1,7 @@
 //import del css
 import "../assets/css/Navbar.css"
 //import el componente
-/*import CartWidget from "./CartWidget"*/
+
 
 //IMPORTO LA IMG DE SRC
 import logo from "../assets/imgs/logo.png"

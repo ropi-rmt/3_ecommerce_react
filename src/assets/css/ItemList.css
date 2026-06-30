@@ -1,0 +1,59 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background-color: white;
+
+}
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: white;
+}
+
+.saludo {
+    color: #333333;
+    font-family: "outfit", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+
+}
+
+.cardImg {
+    height: 15vw;
+}
+
+
+.boton {
+    color: white;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: white;
+    opacity: 25%;
+}

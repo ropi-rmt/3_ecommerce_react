@@ -1,9 +1,10 @@
 import React from 'react'
-import Item from './Item'
+import Item from './Item.jsx'
+import "../assets/css/ItemList.css"
 
 const ItemList = ({data}) => {
   return (
-    <div style={{display:'flex', justifyContent:'space-around', alignItems:'center', flexWrap:'wrap'}}>
+    <div className='galeria'>
         {data.map((prod)=> <Item key={prod.id} prod={prod}/>)}
     </div>
   )

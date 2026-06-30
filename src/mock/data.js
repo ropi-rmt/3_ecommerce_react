@@ -6,7 +6,7 @@ const productos = [
                 stock:15,
         price:5000,
         category:'Combo',
-        img:'./assets/imgs/prodImgs/Combo-1.png'
+        img:'https://d22fxaf9t8d39k.cloudfront.net/69e22140a30f02d5f5488aadc67689f8e02696af1b7cf385bed9f2500a426b0c269319.png'
     },
     {
         id:'02',
@@ -15,7 +15,7 @@ const productos = [
         stock:35,
         price:25000,
         category:'cuidadoFacial',
-        img:'./assets/imgs/prodImgs/CremaFacial-1.png'
+        img:'https://d22fxaf9t8d39k.cloudfront.net/b658955f138f984ef1badaf5c07d5c9289b939d08e012f56db5e854593554c40269319.png'
     },
 
      {
@@ -25,7 +25,7 @@ const productos = [
         stock:55,
         price:75000,
         category:'limpiezaFacial',
-        img:'./assets/imgs/prodImgs/LimpiezaFacial-1.png'
+        img:'https://d22fxaf9t8d39k.cloudfront.net/b74b96def81ff735f633a822a3936d250cc23e4fb84eafaea7dbe7cbabe60a25269319.png'
     },
     {
         id:'04',
@@ -34,7 +34,7 @@ const productos = [
         stock:5,
         price:51000,
         category:'serums',
-        img:'./assets/imgs/prodImgs/Serum-1.png'
+        img:'https://d22fxaf9t8d39k.cloudfront.net/374b4d00d55ee9f6219404671bdee57d73845e0a877b469ec52a2ffff596455c269319.png'
     },
 ]
 
