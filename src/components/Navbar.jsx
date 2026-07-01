@@ -1,9 +1,6 @@
-//import del css
+
 import "../assets/css/Navbar.css"
-//import el componente
 
-
-//IMPORTO LA IMG DE SRC
 import logo from "../assets/imgs/logo.png"
 
 import CartWidget from "./CartWidget"
@@ -18,10 +15,10 @@ const Navbar = (props) => {
             <ul className="nav-left">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/historia.html">Catalogo</a></li>
-                <li class="dropdown">
+                <li className="dropdown">
                     <a href="./pages/lugares.html">Por Categoría</a>
 
-                    <ul class="dropdown-menu">
+                    <ul className="dropdown-menu">
                         <li><a href="./pages/lugares/cork.html">Limpieza Facial</a></li>
                         <li><a href="./pages/lugares/dingle.html">Serums</a></li>
                         <li><a href="./pages/lugares/donegal.html">Cremas Faciales</a></li>
@@ -40,14 +37,14 @@ const Navbar = (props) => {
                 <li className="dropdown"><a href="./pages/curiosidades.html">Nosotros</a>
                 </li>
 
-                <li class="dropdown"><a href="./pages/tips.html">Contacto</a>
-                    <ul class="dropdown-menu">
+                <li className="dropdown"><a href="./pages/tips.html">Contacto</a>
+                    <ul className="dropdown-menu">
                         <li><a href="./pages/alojamiento.html">Alojamiento</a></li>
                         <li><a href="./pages/comida.html">Comida</a></li>
 
                     </ul>
                 </li>
-                <li><CartWidget compra={15} cart={props.cart}/></li>
+                <li><CartWidget compra={15} /></li>
             </ul>
 
         </nav>
