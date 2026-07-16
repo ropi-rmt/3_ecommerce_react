@@ -6,6 +6,9 @@ import logo from "../assets/imgs/logo.png"
 import CartWidget from "./CartWidget"
 import Badge from 'react-bootstrap/Badge';
 
+import {NavLink} from "react-router-dom"
+
+//NavLink es para rutas activas
 const Navbar = (props) => {
 
     return(
@@ -13,34 +16,34 @@ const Navbar = (props) => {
 
         <nav className="navbar">
             <ul className="nav-left">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/historia.html">Catalogo</a></li>
+                <li><NavLink href="./index.html">Inicio</NavLink></li>
+                <li><NavLink href="./pages/historia.html">Catalogo</NavLink></li>
                 <li className="dropdown">
-                    <a href="./pages/lugares.html">Por Categoría</a>
+                    <NavLink href="./pages/lugares.html">Por Categoría</NavLink>
 
                     <ul className="dropdown-menu">
-                        <li><a href="./pages/lugares/cork.html">Limpieza Facial</a></li>
-                        <li><a href="./pages/lugares/dingle.html">Serums</a></li>
-                        <li><a href="./pages/lugares/donegal.html">Cremas Faciales</a></li>
-                        <li><a href="./pages/lugares/dublin.html">Cremas Corporales</a></li>
-                        <li><a href="./pages/lugares/galway.html">Cuidado Capilar</a></li>
-                        <li><a href="./pages/lugares/killarney.html">Velas y Aromas</a></li>
+                        <li><NavLink href="./pages/lugares/cork.html">Limpieza Facial</NavLink></li>
+                        <li><NavLink href="./pages/lugares/dingle.html">Serums</NavLink></li>
+                        <li><NavLink href="./pages/lugares/donegal.html">Cremas Faciales</NavLink></li>
+                        <li><NavLink href="./pages/lugares/dublin.html">Cremas Corporales</NavLink></li>
+                        <li><NavLink href="./pages/lugares/galway.html">Cuidado Capilar</NavLink></li>
+                        <li><NavLink href="./pages/lugares/killarney.html">Velas y Aromas</NavLink></li>
                     </ul>
                 </li>
 
             </ul>
             <div className="logo">
-                <a href="./index.html"><img src={logo} alt="Logo"/></a>
+                <NavLink tp="/"><img src={logo} alt="Logo"/></NavLink>
             </div>
 
             <ul className="nav-right">
-                <li className="dropdown"><a href="./pages/curiosidades.html">Nosotros</a>
+                <li className="dropdown"><NavLink href="./pages/curiosidades.html">Nosotros</NavLink>
                 </li>
 
-                <li className="dropdown"><a href="./pages/tips.html">Contacto</a>
+                <li className="dropdown"><NavLink href="./pages/tips.html">Contacto</NavLink>
                     <ul className="dropdown-menu">
-                        <li><a href="./pages/alojamiento.html">Alojamiento</a></li>
-                        <li><a href="./pages/comida.html">Comida</a></li>
+                        <li><NavLink href="./pages/alojamiento.html">Alojamiento</NavLink></li>
+                        <li><NavLink href="./pages/comida.html">Comida</NavLink></li>
 
                     </ul>
                 </li>
