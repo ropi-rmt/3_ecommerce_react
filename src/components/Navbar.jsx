@@ -23,12 +23,12 @@ const Navbar = (props) => {
                     <NavLink href="./pages/lugares.html">Por Categoría</NavLink>
 
                     <ul className="dropdown-menu">
-                        <li><NavLink href="./pages/lugares/cork.html">Limpieza Facial</NavLink></li>
-                        <li><NavLink href="./pages/lugares/dingle.html">Serums</NavLink></li>
-                        <li><NavLink href="./pages/lugares/donegal.html">Cremas Faciales</NavLink></li>
-                        <li><NavLink href="./pages/lugares/dublin.html">Cremas Corporales</NavLink></li>
-                        <li><NavLink href="./pages/lugares/galway.html">Cuidado Capilar</NavLink></li>
-                        <li><NavLink href="./pages/lugares/killarney.html">Velas y Aromas</NavLink></li>
+                        <li><NavLink to="/category/limpieza">Limpieza Facial</NavLink></li>
+                        <li><NavLink to="category/serum">Serums</NavLink></li>
+                        <li><NavLink to="/category/cremaFacial">Cremas Faciales</NavLink></li>
+                        <li><NavLink to="/category/cremaCorporal">Cremas Corporales</NavLink></li>
+                        <li><NavLink to="/category/cabello">Cuidado Capilar</NavLink></li>
+                        <li><NavLink to="/category/aromas">Velas y Aromas</NavLink></li>
                     </ul>
                 </li>
 
@@ -41,7 +41,7 @@ const Navbar = (props) => {
                 <li className="dropdown"><NavLink href="./pages/curiosidades.html">Nosotros</NavLink>
                 </li>
 
-                <li className="dropdown"><NavLink href="./pages/tips.html">Contacto</NavLink>
+                <li className="dropdown"><NavLink to="/contacto">Contacto</NavLink>
                     <ul className="dropdown-menu">
                         <li><NavLink href="./pages/alojamiento.html">Alojamiento</NavLink></li>
                         <li><NavLink href="./pages/comida.html">Comida</NavLink></li>

@@ -24,6 +24,9 @@ const ItemListContainer = ({ saludo }) => {
 
 
     }, [type])
+
+    //uso el array de dependencias para que el filtro sea dinamico
+    
     console.log(data)
     return (
         <div className="itemCard">

@@ -5,7 +5,7 @@ const productos = [
         description: 'si tenes piel sensible, este combo es para vos!',
                 stock:15,
         price:20000,
-        category:'Combo',
+        category:'combo',
         img:'https://d22fxaf9t8d39k.cloudfront.net/69e22140a30f02d5f5488aadc67689f8e02696af1b7cf385bed9f2500a426b0c269319.png'
     },
     {
