@@ -9,6 +9,7 @@ import Badge from 'react-bootstrap/Badge';
 import {NavLink} from "react-router-dom"
 
 //NavLink es para rutas activas
+
 const Navbar = (props) => {
 
     return(
@@ -16,7 +17,7 @@ const Navbar = (props) => {
 
         <nav className="navbar">
             <ul className="nav-left">
-                <li><NavLink href="./index.html">Inicio</NavLink></li>
+                <li><NavLink to="/">Inicio</NavLink></li>
                 <li><NavLink href="./pages/historia.html">Catalogo</NavLink></li>
                 <li className="dropdown">
                     <NavLink href="./pages/lugares.html">Por Categoría</NavLink>
