@@ -1,17 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { getOneProduct } from '../mock/data'
 import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
+
+import "../assets/css/ItemList.css"
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
 
   const { id } = useParams()
-
+console.log("ID de la URL", id)
   useEffect(() => {
     getOneProduct(id)
       .then((res) => setDetail(res))
-  }, [])
+  }, [id])
 
   return (
     <div>

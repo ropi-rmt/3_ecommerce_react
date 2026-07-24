@@ -11,19 +11,23 @@ import Error from './components/Error.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom' //se usa una sola vez en toda la aplicacion
 
 //para este proyecto, Navbar tiene que estar visible en todas las paginas de la app
-
+// BrowserRoouter no es estilable, es un componente de lógica //
 function App() {
 
   return (
-    <BrowserRouter> //no es estilable, es un componente de logica
+    <BrowserRouter>  
 
       <Navbar />
 
       <Routes>
 
         <Route path='/' element={<ItemListContainer />}></Route>
-        <Route path='/category/:type' element={<ItemDetailContainer />}></Route>
-        <Route path='/item/:id' element={<ItemDetailContainer />}></Route>
+        <Route path='/category/:type' element={<ItemListContainer />}></Route>
+        <Route path='/Item/:id' element={<ItemDetailContainer />}></Route>
+<Route 
+          path="/catalogo" 
+          element={<ItemListContainer />} 
+        ></Route>
 
         //componente comodin - si no se encuentra una ruta, te lleva ahi
         <Route path='*' element={<Error />}></Route>
