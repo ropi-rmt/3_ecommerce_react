@@ -12,6 +12,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom' //se usa una sol
 
 //para este proyecto, Navbar tiene que estar visible en todas las paginas de la app
 
+//tengo q agregar otras routes para cada una de las paginas? como en clase 6
+
 function App() {
 
   return (
