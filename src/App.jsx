@@ -24,9 +24,11 @@ function App() {
       <Routes>
 
         <Route path='/' element={<ItemListContainer />}></Route>
-        <Route path='/category/:type' element={<ItemDetailContainer />}></Route>
+        <Route path='/category/:type' element={<ItemListContainer />}></Route>
         <Route path='/item/:id' element={<ItemDetailContainer />}></Route>
-
+        <Route path="/catalogo" element={<ItemListContainer />}  ></Route>
+          
+      
         //componente comodin - si no se encuentra una ruta, te lleva ahi
         <Route path='*' element={<Error />}></Route>
       </Routes>
