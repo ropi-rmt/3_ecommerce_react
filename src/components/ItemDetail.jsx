@@ -1,10 +1,11 @@
 import React from 'react'
-
+import '../assets/css/ItemDetail.css'
 import ItemCount from './ItemCount'
+
 
 const ItemDetail = ({detail})=> {
     return(
-        <div>
+        <div className="detalle" >
             <h2> Detalle de: {detail.name} </h2>
            <img src={detail.img} alt={detail.name}/>
            <p>{detail.description}</p>

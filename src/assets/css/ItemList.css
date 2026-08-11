@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
+
 .card {
     display: flex;
     flex-direction: column;

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
 
-body {
-    margin: 0;
-    font-family: "Outfit", sans-serif;
+.detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 h1,
@@ -15,12 +18,14 @@ h2 {
 }
 
 h1 {
+    font-family: "Outfit", sans-serif;
     font-size: 56px;
     letter-spacing: -1.68px;
     margin: 32px 0;
 }
 
 h2 {
+    font-family: "Outfit", sans-serif;
     font-size: 24px;
     line-height: 118%;
     letter-spacing: -0.24px;
@@ -29,6 +34,8 @@ h2 {
 
 p {
     margin: 0;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
 }
 
 @media (max-width: 1024px) {
