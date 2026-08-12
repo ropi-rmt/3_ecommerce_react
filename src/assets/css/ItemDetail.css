@@ -37,6 +37,15 @@ p {
     font-family: "Outfit", sans-serif;
     padding: 10px;
 }
+.description{
+font-family: "Outfit", sans-serif;
+}
+
+.price{
+font-family: "Outfit", sans-serif;
+}
+
+
 
 @media (max-width: 1024px) {
     h1 {
