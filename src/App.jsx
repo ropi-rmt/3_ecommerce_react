@@ -12,6 +12,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom' //se usa una sol
 
 //para este proyecto, Navbar tiene que estar visible en todas las paginas de la app
 
+//tengo q agregar otras routes para cada una de las paginas? como en clase 6
+
 function App() {
 
   return (
@@ -22,9 +24,11 @@ function App() {
       <Routes>
 
         <Route path='/' element={<ItemListContainer />}></Route>
-        <Route path='/category/:type' element={<ItemDetailContainer />}></Route>
+        <Route path='/category/:type' element={<ItemListContainer />}></Route>
         <Route path='/item/:id' element={<ItemDetailContainer />}></Route>
-
+        <Route path="/catalogo" element={<ItemListContainer />}  ></Route>
+          
+      
         //componente comodin - si no se encuentra una ruta, te lleva ahi
         <Route path='*' element={<Error />}></Route>
       </Routes>

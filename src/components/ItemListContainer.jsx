@@ -3,7 +3,7 @@ import { getProducts } from "../mock/data.js"
 import Item from "./Item.jsx"
 import ItemList from "./ItemList"
 import "../assets/css/ItemList.css"
-import useParams from "react-router-dom"
+import {useParams} from "react-router-dom"
 
 
 const ItemListContainer = ({ saludo }) => {
