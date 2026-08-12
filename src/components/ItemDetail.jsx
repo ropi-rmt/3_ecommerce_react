@@ -16,3 +16,5 @@ const ItemDetail = ({detail})=> {
     )
 }
 export default ItemDetail
+
+//la unica dif con main es que le di className a las etiquetas para mejorar el CSS

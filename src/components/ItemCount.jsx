@@ -38,3 +38,5 @@ const finalizarCompra = ()=> {
 }
 
 export default ItemCount
+
+//la diferencia con main es el formato de las etiquetas dentro del div 11/8/26; lo dejo asi para ver en donde empecé y poder volver para atras en caso de q lo necesite

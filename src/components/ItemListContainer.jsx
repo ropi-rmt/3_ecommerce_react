@@ -36,3 +36,5 @@ const ItemListContainer = ({ saludo }) => {
     )
 }
 export default ItemListContainer
+
+//la dif con main al 11/8/26 es q agregué un msj de "pagina en construccion" en caso de q no haya productos en una categoria determinada
