@@ -63,33 +63,3 @@ const ItemListContainer = () => {
 
 export default ItemListContainer
 
-/*const ItemListContainer = ({ saludo }) => {
-    const [data, setData] = useState([])
-
-    const { type } = useParams()
-
-    useEffect(() => {
-        getProducts()
-            .then((res) => {
-                if (type) {
-
-                    setData(res.filter((prod) => prod.category === type))
-
-                } else { setData(res) }
-
-            })
-
-
-    }, [type])
-
-    //uso el array de dependencias para que el filtro sea dinamico
-    
-    console.log(data)
-    return (
-        <div className="itemCard">
-            <h1 className="saludo">Bienvenidos a la Tienda Online de Refugio Lunar</h1>
-            <ItemList data={data} />
-        </div>
-    )
-}
-export default ItemListContainer*/
