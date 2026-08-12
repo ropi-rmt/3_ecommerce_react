@@ -36,9 +36,16 @@
 }
 
 .btnComprar {
-    padding: 10px 25px;
+    color: white;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    border-radius: 8px;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
     cursor: pointer;
 }
 

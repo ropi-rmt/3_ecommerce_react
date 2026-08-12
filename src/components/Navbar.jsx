@@ -28,7 +28,7 @@ const Navbar = (props) => {
                         <li><NavLink to="/category/cremaFacial">Cremas Faciales</NavLink></li>
                         <li><NavLink to="/category/cremaCorporal">Cremas Corporales</NavLink></li>
                         <li><NavLink to="/category/cabello">Cuidado Capilar</NavLink></li>
-                        <li><NavLink to="/category/aromas">Velas y Aromas</NavLink></li>
+                        <li><NavLink to="/category/combo">Combos</NavLink></li>
                     </ul>
                 </li>
 

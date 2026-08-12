@@ -1,19 +1,36 @@
 import React, { useEffect, useState } from 'react'
-import { getOneProduct } from '../mock/data'
 import ItemDetail from './ItemDetail'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../service/firebase'
 
 import "../assets/css/ItemList.css"
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
+  const [loader, setLoader] = useState(true)
 
   const { id } = useParams()
-console.log("ID de la URL", id)
+  const navigate = useNavigate()
+
   useEffect(() => {
-    getOneProduct(id)
-      .then((res) => setDetail(res))
+
+    setLoader(true)
+
+    const docRef = doc(db, "products", id)
+    
+    getDoc(docRef)
+      .then((res) => {
+        if (res.data()) {
+          setDetail({ id: res.id, ...res.data() })
+        } else {
+          navigate('/producto-inexistente')
+        }
+      })
+      .catch((error) => console.log(error))
+      .finally(() => setLoader(false))
   }, [id])
+
 
   return (
     <div>

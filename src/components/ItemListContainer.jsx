@@ -1,40 +1,48 @@
 import { useState, useEffect } from "react"
-import { getProducts } from "../mock/data.js"
-import Item from "./Item.jsx"
 import ItemList from "./ItemList"
 import "../assets/css/ItemList.css"
-import {useParams} from "react-router-dom"
-
+import { useParams } from "react-router-dom"
+import LoadingComponent from "./LoadingComponent"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../service/firebase"
 
 const ItemListContainer = () => {
 
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
-
     const { type } = useParams()
 
     useEffect(() => {
-
         setLoading(true)
 
-        getProducts()
+        const prodCollection = type ? query(collection(db, "products"), where("category", "==", type)) : collection(db, "products")
+        
+        getDocs(prodCollection)
+        
             .then((res) => {
 
-                if (type) {
-                    setData(res.filter((prod) => prod.category === type))
-                } else {
-                    setData(res)
-                }
+                //PRUEBAS DE CONEXION CON FIREBASE
+                console.log("Respuesta Firebase:", res)
+                console.log("Cantidad de productos:", res.docs.length)
 
-            })
-            .finally(() => {
-                setLoading(false)
-            })
+                const list = res.docs.map((doc) => {
+                    return {
+                        id: doc.id,
+                        ...doc.data()
+                    }
+                })
 
+                console.log("Lista de productos:", list)
+
+                setData(list)
+            })
+            .catch((error) => console.log(error))
+            .finally(() => setLoading(false))
     }, [type])
 
+
     if (loading) {
-        return <h2>Cargando productos...</h2>
+        return <LoadingComponent text="Cargando productos..." />
     }
 
     return (
