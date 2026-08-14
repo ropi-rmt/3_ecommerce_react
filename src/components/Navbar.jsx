@@ -43,12 +43,12 @@ const Navbar = (props) => {
 
                 <li className="dropdown"><NavLink to="/contacto">Contacto</NavLink>
                     <ul className="dropdown-menu">
-                        <li><NavLink href="./pages/alojamiento.html">Alojamiento</NavLink></li>
-                        <li><NavLink href="./pages/comida.html">Comida</NavLink></li>
+                        <li><NavLink to="/contacto" >Escribinos!</NavLink></li>
+                        <li><a href="https://web.whatsapp.com/">Nuestro Whatsapp!</a></li>
 
                     </ul>
                 </li>
-                <li><CartWidget compra={15} /></li>
+                <li><NavLink to="/cart" ><CartWidget /></NavLink></li>
             </ul>
 
         </nav>
