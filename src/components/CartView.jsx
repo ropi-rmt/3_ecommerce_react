@@ -3,6 +3,7 @@ import { CartContext } from '../context/CartContext'
 import "../assets/css/CartView.css"
 import { FaTrashAlt } from "react-icons/fa";
 import EmptyCart from './EmptyCart'
+import { Link } from 'react-router-dom'
 
 const CartView = () => {
 
@@ -39,6 +40,10 @@ const CartView = () => {
                     </div>
 
                     <div className="cartTotal">
+                        <button onClick={clear} className="boton">Vaciar Carrito</button>
+
+                        <Link to="/checkout" className="boton"> Finalizar Compra </Link>
+
                         <h3>Total: ${total()}</h3>
                     </div>
                 </>

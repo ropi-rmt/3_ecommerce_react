@@ -1,10 +1,19 @@
-import { useState, createContext } from 'react'
+import { useState,useEffect, createContext } from 'react'
 
 export const CartContext = createContext()
 
 export const CartProvider = ({ children }) => {
 
-    const [cart, setCart] = useState([])
+    //me di cuenta q al refrecar la pagina se vaciaba el carrito, por eso recurri al localStorage
+    const [cart, setCart] = useState(() => {
+    const cartStorage = localStorage.getItem('cart')
+
+    return cartStorage ? JSON.parse(cartStorage) : []
+})
+
+useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart))
+}, [cart])
 
     //ya esta el producto en el carrito?
     const isInCart = (id) => {
