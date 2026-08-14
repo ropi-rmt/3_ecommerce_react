@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
+
+.vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 20px;
+}
+
+
+
+.boton {
+    color: white;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: -0.24px;
+    margin: 0 0 8px;
+padding: 10px;
+}
+
+p {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    padding: 10px;
+}

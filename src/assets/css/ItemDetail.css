@@ -46,6 +46,18 @@ font-family: "Outfit", sans-serif;
 font-family: "Outfit", sans-serif;
 }
 
+.boton {
+    color: white;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+}
 
 
 @media (max-width: 1024px) {

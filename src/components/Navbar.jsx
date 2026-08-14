@@ -4,7 +4,6 @@ import "../assets/css/Navbar.css"
 import logo from "../assets/imgs/logo.png"
 
 import CartWidget from "./CartWidget"
-import Badge from 'react-bootstrap/Badge';
 
 import {NavLink} from "react-router-dom"
 
@@ -48,7 +47,7 @@ const Navbar = (props) => {
 
                     </ul>
                 </li>
-                <li><NavLink to="/cart" ><CartWidget /></NavLink></li>
+                <li><CartWidget /></li>
             </ul>
 
         </nav>

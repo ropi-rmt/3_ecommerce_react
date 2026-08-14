@@ -1,10 +1,10 @@
-import { Spinner } from "react-bootstrap"
 import "../assets/css/LoadingComponent.css"
+import { DotLoader } from "react-spinners"
 
 const LoadingComponent = ({ text }) => {
     return (
         <div className="loading">
-            <Spinner variant="dark" animation="border" />
+            <DotLoader color="#222" size={35} />
             <span>{text}</span>
         </div>
     )

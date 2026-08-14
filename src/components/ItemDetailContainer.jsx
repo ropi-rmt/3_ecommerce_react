@@ -5,6 +5,7 @@ import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../service/firebase'
 
 import "../assets/css/ItemList.css"
+import LoadingComponent from './LoadingComponent'
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
@@ -31,6 +32,9 @@ const ItemDetailContainer = () => {
       .finally(() => setLoader(false))
   }, [id])
 
+if (loader) {
+    return <LoadingComponent text="Cargando producto..." />
+}
 
   return (
     <div>
