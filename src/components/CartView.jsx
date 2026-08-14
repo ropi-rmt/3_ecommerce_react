@@ -1,25 +1,46 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
+import "../assets/css/CartView.css"
 
 const CartView = () => {
 
-    const { cart } = useContext(CartContext)
+   const { cart, total } = useContext(CartContext)
 
     console.log(cart)
 
-    return (
-        <div>
-            <h2>Mi carrito</h2>
+return (
+    <div className="cartView">
 
-            {cart.map((prod) => (
-                <div key={prod.id}>
-                    <h3>{prod.name}</h3>
-                    <p>Cantidad: {prod.quantity}</p>
-                    <p>Precio: ${prod.price}</p>
+        <h2>Mi carrito</h2>
+
+        {cart.length === 0 ? (
+            <p className="carritoVacio">El carrito está vacío.</p>
+        ) : (
+            <>
+                <div className="productosCarrito">
+
+                    {cart.map((prod) => (
+                        <div className="cartItem" key={prod.id}>
+
+                            <div className="cartInfo">
+                                <h3>{prod.name}</h3>
+                                <p>Cantidad: {prod.quantity}</p>
+                                <p>Precio: ${prod.price}</p>
+                            </div>
+
+                        </div>
+                    ))}
+
                 </div>
-            ))}
-        </div>
-    )
-}
+
+                <div className="cartTotal">
+                    <h3>Total: ${total()}</h3>
+                </div>
+            </>
+        )}
+
+    </div>
+)}
+
 
 export default CartView

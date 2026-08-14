@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Outfit:wght@100..900&display=swap');
 
+
+.carritoNavbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+
 .burbuja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     background-color: #e8a0a0;
-      font-size: 20px;
+     font-size: 20px;
     font-weight: bold;
     color: white;
 }
+

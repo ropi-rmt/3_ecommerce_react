@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { FaShoppingCart } from "react-icons/fa"
 import { Link } from 'react-router-dom'
+import "../assets/css/CartWidget.css"
 
 const CartWidget = () => {
 
@@ -11,9 +12,9 @@ const CartWidget = () => {
 
     return (
         <Link to="/cart">
-        <div>
+        <div className="carritoNavbar">
             <FaShoppingCart color="white" fontSize="1.5rem" />
-             <span className="burbuja">{cartQty()}</span>
+             <p className="burbuja">{cartQty()}</p>
         </div>
         </Link>
     )
