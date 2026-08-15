@@ -32,7 +32,7 @@ const CartView = () => {
                                 </div>
 
                                 <button onClick={() => removeItem(prod.id)}>
-                                    <FaTrashAlt />
+                                    <FaTrashAlt size={25}/>
                                 </button>
                             </div>
                         ))}

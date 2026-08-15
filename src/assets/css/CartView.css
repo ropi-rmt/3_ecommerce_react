@@ -7,6 +7,7 @@
 .cartView h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .productosCarrito {
@@ -30,6 +31,13 @@
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+  }
+
+  .cartInfo h3{
+   font-size: 22px;
+  }
+.cartInfo p{
+   font-size: 20px;
   }
 
 

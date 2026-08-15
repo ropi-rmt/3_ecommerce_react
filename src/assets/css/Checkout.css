@@ -1,0 +1,74 @@
+.exito{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exito p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exito .boton {
+    color: white;
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.exitoId{
+    background-color: rgb(172, 171, 171);
+    border-radius: 10px;
+}
+
+.checkout {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout input {
+    padding: 12px 15px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.checkout input:focus {
+    border-color: blueviolet;
+    box-shadow: 0 0 5px rgba(138, 43, 226, 0.25);
+}
+
+.checkout p {
+    margin: 0;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gatitoExito {
+    height: 25vh;
+}
