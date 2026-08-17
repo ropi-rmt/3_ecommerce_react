@@ -5,7 +5,7 @@ E-commerce desarrollado con **React JS** como proyecto de práctica y aprendizaj
 🌐 **Demo online:** https://refugiolunarshop.vercel.app/
 💻 **Repositorio:** https://github.com/ropi-rmt/3_ecommerce_react
 
----
+
 
 ## Funcionalidades
 
@@ -30,7 +30,6 @@ E-commerce desarrollado con **React JS** como proyecto de práctica y aprendizaj
 * Diseño responsive mediante CSS.
 * Deploy de la aplicación en Vercel.
 
----
 
 ## Tecnologías utilizadas
 
@@ -43,7 +42,7 @@ E-commerce desarrollado con **React JS** como proyecto de práctica y aprendizaj
 * **CSS**
 * **Vercel**
 
----
+
 
 ## Firebase & Firestore
 
@@ -55,7 +54,7 @@ Además, el proyecto cuenta con un componente para facilitar la carga de product
 
 La conexión con Firebase se realiza mediante **variables de entorno**, evitando incluir la configuración directamente en el código fuente.
 
----
+
 
 ## Carrito de compras
 
@@ -71,7 +70,7 @@ El usuario puede:
 6. Consultar el total.
 7. Continuar con el proceso de checkout.
 
----
+
 
 ## Checkout y órdenes
 
@@ -81,9 +80,9 @@ Al confirmar la compra, se genera una orden que contiene la información corresp
 
 Además se muestra una pantalla final de "compra exitosa" con el código de la orden, como asi tambien se deshabilita el boton de finalizar compra una vez clickeado y se vacia el carrito al confirmarse la compra exitosa.
 
----
 
-## 📂 Estructura del proyecto
+
+## Estructura del proyecto
 
 ```text
 3_ecommerce_react/
@@ -144,7 +143,7 @@ Además se muestra una pantalla final de "compra exitosa" con el código de la o
 
 > La carpeta `.env` se utiliza para las variables de entorno y no se incluye en el repositorio gracias a `.gitignore`.
 
----
+
 
 ## Instalación y ejecución
 
@@ -182,7 +181,7 @@ npm run dev
 
 Vite proporcionará la dirección local para acceder a la aplicación desde el navegador.
 
----
+
 
 ## Deploy
 
@@ -191,7 +190,7 @@ La aplicación se encuentra desplegada utilizando **Vercel**.
 🌐 **Aplicación online:**
 https://refugiolunarshop.vercel.app/
 
----
+
 
 ## Objetivo del proyecto
 
@@ -216,7 +215,6 @@ Durante el desarrollo se trabajó con:
 * Manejo de errores y estados de carga.
 * Deploy de una aplicación React.
 
----
 
 ## Autor
 
