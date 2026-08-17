@@ -59,7 +59,9 @@ font-family: "Outfit", sans-serif;
     margin: 15px;
 }
 
-
+.imgDetail{
+    height: 25vh;
+}
 @media (max-width: 1024px) {
     h1 {
         font-size: 36px;

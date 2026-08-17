@@ -26,7 +26,7 @@ const ItemDetail = ({ detail }) => {
         <div className="detalle" >
             
             <h2> {detail.name} </h2>
-            <img src={detail.img} alt={detail.name} />
+            <img className="imgDetail" src={detail.img} alt={detail.name} />
             <p className="description">{detail.description}</p>
             <p className="price">${detail.price}</p>
             <p>Stock: {availableStock} unidades disponibles</p>
