@@ -6,6 +6,7 @@ import { db } from '../service/firebase'
 
 import "../assets/css/ItemList.css"
 import LoadingComponent from './LoadingComponent'
+import Error from './Error'
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({})
