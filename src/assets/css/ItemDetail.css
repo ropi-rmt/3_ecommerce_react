@@ -60,7 +60,7 @@ font-family: "Outfit", sans-serif;
 }
 
 .imgDetail{
-    height: 25vh;
+    height: 40vh;
 }
 @media (max-width: 1024px) {
     h1 {
