@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
         if (res.data()) {
           setDetail({ id: res.id, ...res.data() })
         } else {
-          navigate('/producto-inexistente')
+          navigate('*')
         }
       })
       .catch((error) => console.log(error))
